@@ -17,10 +17,20 @@ const config: Config = {
         'scaleUp' : {
           '0%' : { transform : 'scale(1.0)'},
           '100%' : { transform : 'scale(25.0)' }
-        } 
+        },
+        'moveRight' : {
+          '0%' : { transform : 'translateX(0px)'},
+          '100%' : { transform : 'translateX(20px)'}
+        },
+        'moveLeft' : {
+          '0%' : { transform : 'translateX(0px)'},
+          '100%' : { transform : 'translateX(-20px)'}
+        }
       },
       animation : {
-        "scaleUp" : "scaleUp 2s ease-in-out infinite"
+        "scaleUp" : "scaleUp 2s ease-in-out forwards",
+        "moveRight" : "moveRight 2s ease-in-out forwards",
+        "moveLeft" : "moveLeft 2s ease-in-out forwards"
       }
     },
   },
